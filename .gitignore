@@ -1,0 +1,8 @@
+.vscode
+.idea
+.pytest_cache
+**/venv
+**/target
+**/__pycache__
+**/logs
+**/*.profraw
