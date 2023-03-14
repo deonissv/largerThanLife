@@ -25,14 +25,14 @@ def test_neighbourhood_to_str():
 def test_config_ctor():
     config = PyConfig(1, 0, 0, (2, 3), (3, 3), PyNeighbourhood("NM"))
     board = PyBoard(3, config)
-    assert board.board() == [[0] * 3] * 3
+    assert board.board == [[0] * 3] * 3
 
 
 def test_board_get_cell():
     config = PyConfig(1, 0, 0, (2, 3), (3, 3), PyNeighbourhood("NM"))
     board = PyBoard(3, config)
-    assert board.board()[0][0] == board.get_cell(0, 0)
-    assert board.board()[1][1] == board.get_cell(1, 1)
+    assert board.board[0][0] == board.get_cell(0, 0)
+    assert board.board[1][1] == board.get_cell(1, 1)
 
 
 def test_board_set_cel():
